@@ -1,0 +1,216 @@
+*{
+    font-family: 'roboto';
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+-Tomato: hsl(4, 100%, 67%);
+
+-Dark-Slate-Grey: hsl(234, 29%, 20%);
+-Charcoal-Grey: hsl(235, 18%, 26%);
+-Grey: hsl(231, 7%, 60%);
+-White: hsl(0, 0%, 100%);
+
+}
+
+body{
+    background-color: hsl(234, 29%, 20%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container{
+    width: 800px;
+    height: 500px;
+    background-color:hsl(0, 0%, 100%);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    /* flex-direction: column; */
+    align-items: center;
+}
+
+.container .left{
+    width: 50%;
+    height: 500px;
+    display: flex;
+    overflow: hidden;
+    /* justify-content: space-between; */
+    flex-direction: column;
+    align-items: center;
+}
+.left h1{
+    font-family: 'roboto';
+    font-weight: 800;
+    font-size: 50px;
+    color:hsl(235, 18%, 26%) ;
+    padding: 60px 20px 10px 20px;
+}
+.left h5{
+    color:hsl(235, 18%, 26%) ;
+    font-family: 'roboto';
+    padding: 5px 20px 30px 45px;
+    font-size: 14px;
+}
+.left .points{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+.left .points .mark{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.left .points img{
+    width: 25px;
+    height: 15px;
+    margin-bottom: 10px;
+}
+.points p{
+    color:hsl(235, 18%, 26%) ;
+    font-family: 'roboto';
+    font-size: 14px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+.container .right .image2{
+    display: none;
+}
+.container .right .image1{
+    width: 300px;
+    height: 800px;
+    border-radius: 10px;
+}
+
+.container .btm{
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.btm p{
+    color:hsl(235, 18%, 26%) ;
+    font-family: 'roboto';
+    font-size: 13px;  
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.btm input{
+    height: 35px;
+    border-radius: 5px;
+    outline: none;
+    border: 0.01px solid hsl(231, 7%, 60%);
+    margin-bottom: 15px;
+    padding-left: 10px;
+    color: hsl(231, 7%, 60%);
+}
+.btm input:hover{
+    cursor: pointer;
+}
+.btm input:focus-within {
+    border: 2px solid hsl(231, 7%, 60%)
+}
+.btm button{
+    height: 35px;
+    border-radius: 5px;
+    outline: none;
+    background-color:hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'roboto';
+    transition: 0.5s ease-in;
+}
+.btm button:hover{
+    cursor: pointer;
+    background-color: linear-gradient(to right, green);
+
+}
+.card{
+    width: 350px;
+    height: 350px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    /* margin: 0 auto; */
+    padding: 20px 40px;
+    display: none;
+}
+.card img{
+    width: 40px;
+    padding-bottom: 20px;
+}
+.card  h1{
+    color:hsl(235, 18%, 26%) ;
+    font-family: 'roboto';
+    font-size: 40px;  
+    padding-bottom: 10px;
+}
+.card p{
+    color:hsl(235, 18%, 26%) ;
+    font-family: 'roboto';
+    font-size: 15px;  
+    padding-bottom: 20px;
+}
+.card p span{
+    color:hsl(235, 18%, 26%) ;
+    font-family: 'roboto';
+    font-weight: 800;
+}
+.card button{
+    height: 35px;
+    width: 250px;
+    border-radius: 5px;
+    outline: none;
+    background-color:hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'roboto';
+}
+
+/* MEDIA QUEERIES */
+
+
+@media (max-width: 375px) {
+    .container{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: none;
+    }
+    .container .right{
+        width: 100%;
+        height: 100px;
+    }
+   .right .image1 {
+       display: none;
+    }
+    .right .image2{
+        display: block;
+        margin-bottom: 20px;
+        width:100px;
+    }
+    .container .left{
+        width: 100%;
+        height: 50%;
+    }
+    .left h1{
+        font-size: 40px;
+    }
+    .card{
+        height: 100vh;
+        width: 100%;
+    }
+    .card img{
+        width: 60px;
+        margin-top: 150px;
+    } 
+    .card p{
+        margin-bottom: 350px;
+    }
+    .card button{
+        width: 300px;
+        height: 50px;
+    }
+} 
+
